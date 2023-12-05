@@ -60,6 +60,3 @@ options notes;
 %Calibration(weight,consCoef=coef,Targets=targets,DataOut=Calweight);
 
 
-options notes;
-%IPF(weight,consCoef=coef,Targets=targets,DataOut=Calweight,tol=0.2,maxiter=200);
-
