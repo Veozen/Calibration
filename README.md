@@ -8,20 +8,20 @@ Calibrates weights to a set of control totals.
 inVar: File
     unitId      : numeric of string
     weight      : numeric decision variable
-	lb			: numeric x >= lb
-	ub			: numeric x <= up
+	lb	: numeric x >= lb
+	ub	: numeric x <= up
 
 ConsCoef : File
     unitId      : numeric or string
-    (Var1..VarN):
+    (Var1..VarN): coefficients of the linear combinations that must be statisfied. One variable per linear combination.
 
 Targets : File
-    consId      : liste des variables contenant les coefficients (Var1..VarN)
-    Target       : numeric
+    consId      : name of the variable (Var1..VarN) from file ConsCoef that contains the coefficients of this linear combination
+    Target      : numeric
 
 DataOut : File
     untiId      :
-    weight		: numeric lb <=	w <= ub
+    weight	: numeric lb <=	w <= ub
 
 */
 ```
