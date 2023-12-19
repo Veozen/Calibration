@@ -17,7 +17,7 @@ ConsCoef : File
 
 Targets : File
     consId      : name of the variable (Var1..VarN) from file ConsCoef that contains the coefficients of this linear combination
-    Target      : numeric
+    Target      : the value to which the linear constraint should add up to 
 
 DataOut : File
     untiId      : label identifying the unit from input faile inVar
