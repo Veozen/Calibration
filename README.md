@@ -1,6 +1,6 @@
 # Calibration
 
-Calibrates weights to a set of control totals.
+Calibrates weights to a set of control totals. Makes use of SAS proc optmodel.
 
 ```SAS
 %macro Calibration(inVar,ConsCoef=,Targets=,DataOut=);
