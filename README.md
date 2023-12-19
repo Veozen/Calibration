@@ -6,8 +6,8 @@ Calibrates weights to a set of control totals.
 %macro Calibration(inVar,ConsCoef=,Targets=,DataOut=);
 /*
 inVar: File
-    unitId      : numeric of string
-    weight      : numeric decision variable
+    unitId	: numeric of string
+    weight	: numeric decision variable
 	lb	: numeric x >= lb
 	ub	: numeric x <= up
 
@@ -20,7 +20,7 @@ Targets : File
     Target      : numeric
 
 DataOut : File
-    untiId      :
+    untiId      : label identifying the unit from input faile inVar
     weight	: numeric lb <=	w <= ub
 
 */
