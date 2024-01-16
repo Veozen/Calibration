@@ -1,30 +1,40 @@
-# Calibration
+# Macro Calibration
 
 Calibrates weights to a set of control totals. Makes use of SAS proc optmodel.
 
+##Syntax:
+
 ```SAS
-%macro Calibration(inVar,ConsCoef=,Targets=,DataOut=);
-/*
-inVar: File
-    unitId	: numeric of string
-    weight	: numeric decision variable
-	lb	: numeric x >= lb
-	ub	: numeric x <= up
+%macro Calibration(
+	inVar,
+	ConsCoef=,
+	Targets=,
+	DataOut=
+);
+```
+
+## Parameters:
+### Input:
+inVar: File  
+    unitId	: numeric of string  
+    weight	: numeric decision variable  
+	lb	: numeric x >= lb  
+	ub	: numeric x <= up  
 
 ConsCoef : File
-    unitId      : numeric or string
-    (Var1..VarN): coefficients of the linear combinations that must be statisfied. One variable per linear combination.
+    unitId      : numeric or string  
+    (Var1..VarN): coefficients of the linear combinations that must be statisfied. One variable per linear combination.  
 
 Targets : File
-    consId      : name of the variable (Var1..VarN) from file ConsCoef that contains the coefficients of this linear combination
-    Target      : the value to which the linear constraint should add up to 
+    consId      : name of the variable (Var1..VarN) from file ConsCoef that contains the coefficients of this linear combination  
+    Target      : the value to which the linear constraint should add up to   
 
-DataOut : File
-    untiId      : label identifying the unit from input faile inVar
-    weight	: numeric lb <=	w <= ub
+### Output:
+DataOut : File  
+    untiId      : label identifying the unit from input faile inVar  
+    weight	: numeric lb <=	w <= ub  
 
-*/
-```
+
 
 # Usage  
 
