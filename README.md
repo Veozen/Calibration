@@ -2,7 +2,7 @@
 
 Calibrates weights to a set of control totals. Makes use of SAS proc optmodel.
 
-##Syntax:
+## Syntax:
 
 ```SAS
 %macro Calibration(
